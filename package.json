@@ -1,0 +1,18 @@
+{
+  "name": "metube",
+  "version": "1.0.0",
+  "description": "youtube clone with VanillaJS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Librariann/metube.git"
+  },
+  "author": "ParkSeongHyun",
+  "bugs": {
+    "url": "https://github.com/Librariann/metube/issues"
+  },
+  "homepage": "https://github.com/Librariann/metube#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
