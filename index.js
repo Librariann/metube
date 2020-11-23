@@ -4,5 +4,3 @@ import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 const app = express();
-
-
