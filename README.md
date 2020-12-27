@@ -1,16 +1,16 @@
 # metube
-youtube clone coding
 
+youtube clone coding
 
 ## Pages:
 
-    - [ ] home
+    - [x] home
     - [x] join
     - [x] login
     - [x] search
     - [ ] user Detail
     - [ ] edit Profile
     - [ ] change password
-    - [ ] upload
-    - [ ] video detail
-    - [ ] edit video
+    - [x] upload
+    - [x] video detail
+    - [x] edit video

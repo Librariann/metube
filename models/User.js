@@ -6,11 +6,11 @@ const UserSchema = new mongoose.Schema({
   email: String,
   avatarUrl: String,
   facebookId: Number,
-  githubId: Number
+  githubId: Number,
 });
 
 UserSchema.plugin(passportLocalMongoose, { usernameField: "email" });
 
-const model = mongoose.Model("User", UserSchema);
+const model = mongoose.model("User", UserSchema);
 
 export default model;
