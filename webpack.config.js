@@ -23,10 +23,10 @@ const config = {
         test: /\.(scss)$/,
         use: [
             {
-            loader: MiniCssExtractPlugin.loader
+                loader: MiniCssExtractPlugin.loader
             },
             {
-            loader: "css-loader"
+                loader: "css-loader"
             },
             {
                 loader: "postcss-loader",
@@ -51,14 +51,14 @@ const config = {
     ]
 },
     output: {
-    path: OUTPUT_DIR,
-    filename: "[name].js"
+        path: OUTPUT_DIR,
+        filename: "[name].js"
     },
 plugins: [
-new MiniCssExtractPlugin({
-filename: 'styles.css'
-}),
-]
+        new MiniCssExtractPlugin({
+            filename: 'styles.css' 
+        }),
+    ]
 };
 
 module.exports = config;

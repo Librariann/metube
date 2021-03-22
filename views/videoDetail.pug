@@ -3,7 +3,7 @@ extends layouts/main
 block content
     .video-detail__container
         .video__player
-            video(src=`/${videoDetailInfo.fileUrl}`)
+            video(src=`${videoDetailInfo.fileUrl}`)
         .video__info
             a(href=routes.editVideo(videoDetailInfo.id))
                 button Edit video

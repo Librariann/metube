@@ -1,6 +1,6 @@
+import passport from "passport";
 import routes from "../routes";
 import User from "../models/User";
-import passport from "passport";
 
 export const getJoin = (req, res) => {
   res.render("join", { pageTitle: "join" });
@@ -73,14 +73,14 @@ export const logout = (req, res) => {
 export const getMe = (req, res) => {
   res.render("userDetail", { pageTitle: userDetail, user: req.user });
 };
-export const userDetail = async(req, res) => {
+export const userDetail = async (req, res) => {
   const {
-    params: { id }
+    params: { id },
   } = req;
 
   try {
     const user = await User.findById(id);
-    res.render("userDetail", { pageTitle: "userDetail", user })
+    res.render("userDetail", { pageTitle: "userDetail", user });
   } catch (error) {
     res.redirect(rotues.home);
   }

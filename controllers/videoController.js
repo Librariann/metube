@@ -25,6 +25,8 @@ export const search = async (req, res) => {
   console.log(videos);
   res.render("search", { videos, pageTitle: "search", searchingBy });
 };
+
+//비디오 상세
 export const videoDetail = async (req, res) => {
   const {
     params: { id },
@@ -37,6 +39,8 @@ export const videoDetail = async (req, res) => {
     res.redirect(routes.home);
   }
 };
+
+//비디오 getEdit
 export const getEditVideo = async (req, res) => {
   const {
     params: { id },
@@ -68,13 +72,16 @@ export const postEditVideo = async (req, res) => {
 export const getUpload = (req, res) => {
   res.render("upload", { pageTitle: "upload" });
 };
+
+//비디오 post 업로드
 export const postUpload = async (req, res) => {
   const {
     body: { title, description },
-    file: { path },
+    file: { location },
   } = req;
+  console.log(req.file);
   const newVideo = await Video.create({
-    fileUrl: path,
+    fileUrl: location,
     title,
     description,
   });

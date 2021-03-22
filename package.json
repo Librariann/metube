@@ -18,7 +18,7 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "autoprefixer": "^10.0.4",
-    "aws-sdk": "^2.817.0",
+    "aws-sdk": "^2.820.0",
     "babel-loader": "^8.2.2",
     "body-parser": "^1.19.0",
     "connect-mongo": "^3.2.0",
@@ -50,7 +50,7 @@
     "webpack-cli": "^4.2.0"
   },
   "scripts": {
-    "dev:server": "nodemon --exec babel-node init.js --delay 2 --ignore 'scss'",
+    "dev:server": "nodemon --exec babel-node init.js --delay 2 --ignore '.scss' --ignore 'static'",
     "dev:assets": "WEBPACK_ENV=development webpack -w",
     "build:assets": "WEBPACK_ENV=production webpack"
   },
